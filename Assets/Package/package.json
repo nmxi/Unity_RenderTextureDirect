@@ -1,0 +1,10 @@
+{
+    "name": "dev.kemomimi.render-texture-direct",
+    "displayName": "Render Texture Direct",
+    "version": "1.0.0",
+    "unity": "2020.3",
+    "description": "Render Texture directly on the screen",
+    "author": {
+        "name": "miki"
+    }
+}
