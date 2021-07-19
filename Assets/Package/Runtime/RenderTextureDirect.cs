@@ -7,7 +7,7 @@ namespace dev.kemomimi.renderTextureDirect
 
     public class RenderTextureDirect : MonoBehaviour
     {
-        [SerializeField] private RenderTexture renderTexture;
+        public RenderTexture RenderTexture;
 
         private Camera cam;
         private Material rtAttachedMat;
@@ -26,7 +26,7 @@ namespace dev.kemomimi.renderTextureDirect
                 return;
 
             rtAttachedMat = new Material(Shader.Find("RenderTextureDirect/Attach"));
-            rtAttachedMat.SetTexture("_RenderTex", renderTexture);
+            rtAttachedMat.SetTexture("_RenderTex", RenderTexture);
         }
 
         private void OnRenderImage(RenderTexture source, RenderTexture destination)
