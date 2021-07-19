@@ -12,7 +12,7 @@ namespace dev.kemomimi.renderTextureDirect
         private Camera cam;
         private Material rtAttachedMat;
 
-        private void OnEnable()
+        private void Start()
         {
             cam = GetComponent<Camera>();
             cam.targetTexture = null;
